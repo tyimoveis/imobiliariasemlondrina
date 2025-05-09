@@ -1,15 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detalhes de apartamentos de luxo em Londrina, na Gleba Palhano e Centro.">
-    <meta name="keywords" content="apartamento Londrina, Gleba Palhano, Centro, imóvel de luxo">
-    <meta name="author" content="Imobiliária Elite">
-    <title>Detalhes do Apartamento - Elite Imóveis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/feather-icons">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Detalhes do Imóvel - Elite Imóveis</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons"/>
 </head>
 <body>
     <header class="header">
@@ -18,72 +15,69 @@
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="imoveis.html" class="nav-link">Imóveis</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#contato" class="nav-link">Contato</a>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
                     <i data-feather="moon"></i>
                 </button>
             </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
     <main>
         <section class="imoveis-section">
             <div class="container">
-                <h2 class="section-title">Detalhes do Apartamento</h2>
-                <div id="imovel-detalhes" class="imovel-detalhes">
+                <h2 class="section-title">Detalhes do Imóvel</h2>
+                <div class="imovel-detalhes">
                     <div class="carousel">
                         <button class="carousel-btn prev glass" onclick="changeSlide(-1)">
                             <i data-feather="chevron-left"></i>
                         </button>
                         <div class="image-placeholder"></div>
-                        <img id="imovel-imagem" src="" alt="Imagem do apartamento" loading="lazy" onload="this.classList.add('loaded')">
+                        <img id="imovel-imagem" src="" alt="Imagem do imóvel" loading="lazy" onload="this.classList.add('loaded')"/>
                         <button class="carousel-btn next glass" onclick="changeSlide(1)">
                             <i data-feather="chevron-right"></i>
                         </button>
                     </div>
-                    <h3 id="imovel-titulo"></h3>
-                    <p id="imovel-preco"></p>
-                    <p id="imovel-detalhes-texto"></p>
-                    <p id="imovel-descricao"></p>
-                    <a href="https://wa.me/5543999999999" target="_blank" class="btn btn-cta glass">Fale pelo WhatsApp</a>
-                    <a href="#contato" class="btn btn-cta glass">Entre em Contato</a>
+                    <h3 id="imovel-titulo">Edifício Luxor</h3>
+                    <p class="preco">Venda: <strong>R$ 1.865.000</strong></p>
+                    <p>Condomínio: R$ 2.680 | IPTU: R$ 6.270</p>
+                    <ul class="detalhes-lista">
+                        <li>140 m²</li>
+                        <li>3 quartos</li>
+                        <li>4 banheiros</li>
+                        <li>2 vagas</li>
+                        <li>3 suítes</li>
+                        <li>Mobiliado</li>
+                        <li>Aceita animais</li>
+                        <li>Piscina</li>
+                        <li>Varanda</li>
+                        <li>Armário na cozinha</li>
+                        <li>Quadra de tênis</li>
+                        <li>Academia</li>
+                        <li>Espaço fitness</li>
+                        <li>Área de serviço</li>
+                        <li>Portaria 24h</li>
+                        <li>Armário embutido</li>
+                        <li>Cozinha</li>
+                        <li>Playground</li>
+                        <li>Ronda/Vigilância</li>
+                        <li>Condomínio fechado</li>
+                        <li>Área de lazer</li>
+                        <li>Apartamento inteligente</li>
+                        <li>Ar-condicionado</li>
+                        <li>Circuito de segurança</li>
+                        <li>Cozinha gourmet</li>
+                        <li>Salão de festas</li>
+                    </ul>
+                    <div class="botoes">
+                        <a href="https://wa.me/5543999999999" target="_blank" class="btn btn-cta glass">Fale pelo WhatsApp</a>
+                        <a href="#contato" class="btn btn-cta glass">Entre em Contato</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="contato" class="contato-section">
-            <div class="container">
-                <h3 class="section-title">Entre em Contato</h3>
-                <form id="contato-form" class="contato-form glass">
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-cta glass">Enviar</button>
-                </form>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <p>© 2026 Elite Imóveis. Todos os direitos reservados.</p>
-            <p>contato@eliteimoveis.com.br | (43) 99999-9999</p>
         </div>
     </footer>
     <script src="script.js"></script>
