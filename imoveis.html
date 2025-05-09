@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apartamentos de luxo à venda em Londrina, nos bairros Gleba Palhano e Centro.">
+    <meta name="keywords" content="apartamentos Londrina, Gleba Palhano, Centro, imóveis de luxo">
+    <meta name="author" content="Imobiliária Elite">
+    <title>Apartamentos - Elite Imóveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Elite Imóveis</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="imoveis.html" class="nav-link">Imóveis</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i data-feather="moon"></i>
+                </button>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Nossos Apartamentos</h2>
+                <p class="hero-subtitle">Explore imóveis de alto padrão na Gleba Palhano e Centro.</p>
+                <form id="search-form" class="search-form glass">
+                    <div class="filter-group">
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" id="tipo" disabled>
+                            <option value="apartamento" selected>Apartamento</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="bairro">Bairro</label>
+                        <select name="bairro" id="bairro">
+                            <option value="">Qualquer</option>
+                            <option value="gleba-palhano">Gleba Palhano</option>
+                            <option value="centro">Centro</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="precoMin">Valor Mínimo (R$)</label>
+                        <input type="number" name="precoMin" id="precoMin" placeholder="100000" min="0">
+                    </div>
+                    <div class="filter-group">
+                        <label for="precoMax">Valor Máximo (R$)</label>
+                        <input type="number" name="precoMax" id="precoMax" placeholder="1000000" min="0">
+                    </div>
+                    <div class="filter-group">
+                        <button type="submit" class="btn btn-cta glass">Buscar</button>
+                        <button type="reset" class="btn btn-reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="imoveis" class="imoveis-section">
+            <div class="container">
+                <h3 class="section-title">Lista de Imóveis</h3>
+                <p id="results-count" class="results-count"></p>
+                <div id="imoveis-lista" class="imoveis-lista"></div>
+                <div id="loader" class="loader glass"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Elite Imóveis. Todos os direitos reservados.</p>
+            <p>contato@eliteimoveis.com.br | (43) 99999-9999</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>feather.replace()</script>
+</body>
+</html>
